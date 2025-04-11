@@ -27,13 +27,13 @@ const SOCIALS = [
     Icon: () => <Linkedin size={20} strokeWidth={1.5} />,
     umamiEvent: 'profile-card-linkedin',
   },
-  {
-    platform: 'x',
-    handle: getAccountHandle(SITE_METADATA.x),
-    href: SITE_METADATA.x,
-    Icon: () => <XIcon className="h-4 w-4" fill="#fff" viewBox="0 0 1200 1227" />,
-    umamiEvent: 'profile-card-x',
-  },
+  // {
+  //   platform: 'x',
+  //   handle: getAccountHandle(SITE_METADATA.x),
+  //   href: SITE_METADATA.x,
+  //   Icon: () => <XIcon className="h-4 w-4" fill="#fff" viewBox="0 0 1200 1227" />,
+  //   umamiEvent: 'profile-card-x',
+  // },
 ]
 
 export function ProfileCardInfo() {
