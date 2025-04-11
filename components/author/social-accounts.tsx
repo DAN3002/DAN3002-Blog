@@ -46,7 +46,7 @@ export function SocialAccounts({ className }: { className?: string }) {
         <span className="sr-only">Mail</span>
         <Mail strokeWidth={1.5} />
       </a>
-      <a
+      {/* <a
         href={SITE_METADATA.facebook}
         target="_self"
         data-umami-event="contact-facebook"
@@ -55,8 +55,8 @@ export function SocialAccounts({ className }: { className?: string }) {
       >
         <span className="sr-only">Facebook</span>
         <Facebook strokeWidth={1.5} />
-      </a>
-      <a
+      </a> */}
+      {/* <a
         href={SITE_METADATA.youtube}
         target="_self"
         data-umami-event="contact-youtube"
@@ -65,7 +65,7 @@ export function SocialAccounts({ className }: { className?: string }) {
       >
         <span className="sr-only">Youtube</span>
         <Youtube strokeWidth={1.5} />
-      </a>
+      </a> */}
     </div>
   )
 }
