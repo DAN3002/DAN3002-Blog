@@ -20,6 +20,25 @@ export const SITE_METADATA = {
   // instagram: 'https://www.instagram.com/DAN3002',
   locale: 'en-US',
   stickyNav: true,
+
+  // New profile information
+  profile: {
+    name: 'Nguyễn Đình Anh',
+    displayName: 'DAN_3002',
+    tagline: 'Cloud | Software | AI',
+    occupation: {
+      title: 'Senior Devops',
+      company: 'VPBank',
+      companyUrl: 'https://www.vpbank.com.vn/',
+    },
+    location: {
+      city: 'Ha Noi',
+      country: 'Vietnam',
+      countryCode: 'VN',
+      emoji: 'flag-vietnam',
+    },
+  },
+
   // goodreadsBookshelfUrl: 'https://www.goodreads.com/review/list/179720035-leo-huynh',
   // goodreadsFeedUrl: 'https://www.goodreads.com/review/list_rss/179720035',
   // imdbRatingsList: 'https://www.imdb.com/user/ur154483197/ratings/?view=grid',
