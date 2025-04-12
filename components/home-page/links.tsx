@@ -5,28 +5,28 @@ import { SITE_METADATA } from '~/data/site-metadata'
 
 const LINKS = [
   {
-    title: `What have I built?`,
-    href: `/projects`,
-    emoji: 'man-technologist',
-    event: 'home-link-projects',
-  },
-  {
     title: `My writings`,
     href: `/blog`,
     emoji: 'memo',
     event: 'home-link-blog',
   },
-  {
-    title: `Snippets collection`,
-    href: `/snippets`,
-    emoji: 'dna',
-    event: 'home-link-snippets',
-  },
+  // {
+  //   title: `Snippets collection`,
+  //   href: `/snippets`,
+  //   emoji: 'dna',
+  //   event: 'home-link-snippets',
+  // },
   {
     title: `About me & this blog`,
     href: `/about`,
     emoji: 'smiling-face-with-sunglasses',
     event: 'home-link-about',
+  },
+  {
+    title: `What have I built?`,
+    href: `${SITE_METADATA.portfolioUrl}/projects`,
+    emoji: 'man-technologist',
+    event: 'home-link-projects',
   },
   {
     title: `Traffic and insights`,

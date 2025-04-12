@@ -2,6 +2,7 @@ import type { Blog, Snippet } from '~/.contentlayer/generated'
 import { ProfileCard } from '~/components/cards/profile'
 import { Container } from '~/components/ui/container'
 import { Twemoji } from '~/components/ui/twemoji'
+import { SITE_METADATA } from '~/data/site-metadata'
 import type { CoreContent } from '~/types/data'
 import { Greeting } from './greeting'
 import { Intro } from './intro'
@@ -16,6 +17,8 @@ export function Home({
   posts: CoreContent<Blog>[]
   snippets: CoreContent<Snippet>[]
 }) {
+  const { profile } = SITE_METADATA
+
   return (
     <Container as="div" className="pt-4 lg:pt-12">
       <div className="py-6 md:pb-8 xl:grid xl:grid-cols-3">
@@ -25,10 +28,9 @@ export function Home({
             <Intro />
             <TypedBios />
             <div className="mb-6 mt-4 md:mb-8">
-              <p>I started learning to code in 2016 and have been hooked ever since.</p>
-              <p>I landed my first job as a Python coding mentor in 2017.</p>
-              <p>I have a passion for JS/TS, web dev, and eCommerce.</p>
-              <p>I started this blog to document and share my knowledge & experience.</p>
+              {profile.bio.map((paragraph, idx) => (
+                <p key={idx}>{paragraph}</p>
+              ))}
             </div>
             <BlogLinks />
             <p className="my-6 flex md:my-8">

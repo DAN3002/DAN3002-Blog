@@ -7,6 +7,7 @@ export const SITE_METADATA = {
   language: 'en-us',
   theme: 'system', // system, dark or light
   siteUrl: 'https://blog.dan3002.tech',
+  portfolioUrl: 'https://dan3002.tech',
   siteRepo: 'https://github.com/DAN3002/DAN3002-Blog',
   siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.jpg`,
   socialBanner: `${process.env.BASE_PATH || ''}/static/images/logo.jpg`,
@@ -21,13 +22,13 @@ export const SITE_METADATA = {
   locale: 'en-US',
   stickyNav: true,
 
-  // New profile information
+  // Profile information
   profile: {
     name: 'Nguyễn Đình Anh',
     displayName: 'DAN_3002',
     tagline: 'Cloud | Software | AI',
     occupation: {
-      title: 'Senior Devops',
+      title: 'Devops Engineer',
       company: 'VPBank',
       companyUrl: 'https://www.vpbank.com.vn/',
     },
@@ -37,6 +38,20 @@ export const SITE_METADATA = {
       countryCode: 'VN',
       emoji: 'flag-vietnam',
     },
+    bio: [
+      'I had the opportunity to start college at the age of 16.',
+      'Started working a year later (17 years old).',
+      'My interests are in cloud computing as well as software development.',
+      'I am always open to new opportunities and challenges.',
+    ],
+    typedBios: [
+      '<strong>Age 16</strong> – Started university ahead of peers.',
+      '<strong>Age 17</strong> – Landed my first part-time job while still in school.',
+      '<strong>Age 18</strong> – Received a full-time job offer right after graduating high school.',
+      '<strong>Age 20</strong> – Graduated from university two years early.',
+      '<strong>Age 21</strong> – Became the youngest Senior Specialist at @VPBank.',
+      "Let's see what milestone is next.",
+    ],
   },
 
   // goodreadsBookshelfUrl: 'https://www.goodreads.com/review/list/179720035-leo-huynh',
