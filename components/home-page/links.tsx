@@ -17,23 +17,23 @@ const LINKS = [
   //   event: 'home-link-snippets',
   // },
   {
-    title: `About me & this blog`,
-    href: `/about`,
+    title: `About me`,
+    href: `${SITE_METADATA.portfolioUrl}?section=about`,
     emoji: 'smiling-face-with-sunglasses',
     event: 'home-link-about',
   },
   {
     title: `What have I built?`,
-    href: `${SITE_METADATA.portfolioUrl}/projects`,
+    href: `${SITE_METADATA.portfolioUrl}?section=projects`,
     emoji: 'man-technologist',
     event: 'home-link-projects',
   },
-  {
-    title: `Traffic and insights`,
-    href: SITE_METADATA.analytics.umamiAnalytics.shareUrl,
-    emoji: 'bar-chart',
-    event: 'home-link-analytics',
-  },
+  // {
+  //   title: `Traffic and insights`,
+  //   href: SITE_METADATA.analytics.umamiAnalytics.shareUrl,
+  //   emoji: 'bar-chart',
+  //   event: 'home-link-analytics',
+  // },
 ]
 
 export function BlogLinks() {
