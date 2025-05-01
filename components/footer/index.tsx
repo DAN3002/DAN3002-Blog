@@ -21,16 +21,16 @@ export function Footer() {
           <div className="italic text-gray-500 dark:text-gray-400">{SITE_METADATA.description}</div>
           <div className="pt-4">
             <div className="flex gap-8 py-1.5 md:gap-20">
-              <div className="flex items-center">
+              {/* <div className="flex items-center">
                 <Signature className="h-20 w-32 md:w-40" />
-              </div>
+              </div> */}
               <FooterMeta />
             </div>
           </div>
         </div>
         <FooterNav />
       </div>
-      <FooterBottom />
+      {/* <FooterBottom /> */}
     </Container>
   )
 }
