@@ -1,12 +1,12 @@
 {
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/components/*": ["components/*"],
-      "@/data/*": ["data/*"],
-      "@/layouts/*": ["layouts/*"],
-      "@/css/*": ["css/*"],
-      "contentlayer/generated": ["./.contentlayer/generated"]
-    }
-  }
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@/components/*": ["components/*"],
+			"@/data/*": ["data/*"],
+			"@/layouts/*": ["layouts/*"],
+			"@/css/*": ["css/*"],
+			"contentlayer/generated": ["./.contentlayer/generated"]
+		}
+	}
 }

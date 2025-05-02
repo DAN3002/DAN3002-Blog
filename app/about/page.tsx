@@ -7,13 +7,13 @@ import { coreContent } from '~/utils/contentlayer'
 export let metadata = genPageMetadata({ title: 'About' })
 
 export default function AboutPage() {
-  let author = allAuthors.find((p) => p.slug === 'default') as Author
-  let mainContent = coreContent(author)
+	let author = allAuthors.find((p) => p.slug === 'default') as Author
+	let mainContent = coreContent(author)
 
-  return (
-    <AuthorLayout content={mainContent}>
-      {/* TODO: MDX seems to be broken on this page, so I'm back to JSX for now */}
-      {/* <MDXLayoutRenderer code={author.body.code} /> */}
-    </AuthorLayout>
-  )
+	return (
+		<AuthorLayout content={mainContent}>
+			{/* TODO: MDX seems to be broken on this page, so I'm back to JSX for now */}
+			{/* <MDXLayoutRenderer code={author.body.code} /> */}
+		</AuthorLayout>
+	)
 }

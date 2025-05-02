@@ -7,16 +7,16 @@ import { Pre } from './pre'
 import { TableWrapper } from './table-wrapper'
 
 export const MDX_COMPONENTS: MDXComponents = {
-  Image: ({ alt, ...rest }: ImageProps) => {
-    return (
-      <Zoom>
-        <Image alt={alt} {...rest} />
-      </Zoom>
-    )
-  },
-  Twemoji,
-  CodeTitle,
-  a: Link,
-  pre: Pre,
-  table: TableWrapper,
+	Image: ({ alt, ...rest }: ImageProps) => {
+		return (
+			<Zoom>
+				<Image alt={alt} {...rest} />
+			</Zoom>
+		)
+	},
+	Twemoji,
+	CodeTitle,
+	a: Link,
+	pre: Pre,
+	table: TableWrapper,
 }

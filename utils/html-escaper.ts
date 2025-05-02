@@ -1,15 +1,15 @@
 let { replace } = ''
 let ca = /[&<>'"]/g
 let esca = {
-  '&': '&amp;',
-  '<': '&lt;',
-  '>': '&gt;',
-  "'": '&#39;',
-  '"': '&quot;',
+	'&': '&amp;',
+	'<': '&lt;',
+	'>': '&gt;',
+	"'": '&#39;',
+	'"': '&quot;',
 }
 
 function pe(m: keyof typeof esca) {
-  return esca[m]
+	return esca[m]
 }
 
 /**
@@ -20,5 +20,5 @@ function pe(m: keyof typeof esca) {
  *  converted as string.
  */
 export function escape(es: string): string {
-  return replace.call(es, ca, pe)
+	return replace.call(es, ca, pe)
 }

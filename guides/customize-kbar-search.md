@@ -15,44 +15,44 @@ import type { CoreContent } from '~/types/data'
 import { KBarSearchProvider } from '~/components/search/kbar-provider'
 
 export const SearchProvider = ({ children }) => {
-  const router = useRouter()
-  return (
-    <KBarSearchProvider
-      kbarConfig={{
-        searchDocumentsPath: 'search.json',
-        defaultActions: [
-          {
-            id: 'homepage',
-            name: 'Homepage',
-            keywords: '',
-            shortcut: ['h', 'h'],
-            section: 'Home',
-            perform: () => router.push('/'),
-          },
-          {
-            id: 'projects',
-            name: 'Projects',
-            keywords: '',
-            shortcut: ['p'],
-            section: 'Home',
-            perform: () => router.push('/projects'),
-          },
-        ],
-        onSearchDocumentsLoad(json) {
-          return json.map((post: CoreContent<Blog>) => ({
-            id: post.path,
-            name: post.title,
-            keywords: post?.summary || '',
-            section: 'Blog',
-            subtitle: post.tags.join(', '),
-            perform: () => router.push('/' + post.path),
-          }))
-        },
-      }}
-    >
-      {children}
-    </KBarSearchProvider>
-  )
+	const router = useRouter()
+	return (
+		<KBarSearchProvider
+			kbarConfig={{
+				searchDocumentsPath: 'search.json',
+				defaultActions: [
+					{
+						id: 'homepage',
+						name: 'Homepage',
+						keywords: '',
+						shortcut: ['h', 'h'],
+						section: 'Home',
+						perform: () => router.push('/'),
+					},
+					{
+						id: 'projects',
+						name: 'Projects',
+						keywords: '',
+						shortcut: ['p'],
+						section: 'Home',
+						perform: () => router.push('/projects'),
+					},
+				],
+				onSearchDocumentsLoad(json) {
+					return json.map((post: CoreContent<Blog>) => ({
+						id: post.path,
+						name: post.title,
+						keywords: post?.summary || '',
+						section: 'Blog',
+						subtitle: post.tags.join(', '),
+						perform: () => router.push('/' + post.path),
+					}))
+				},
+			}}
+		>
+			{children}
+		</KBarSearchProvider>
+	)
 }
 ```
 
@@ -60,16 +60,16 @@ You can even choose to do a full text search over the entire generated blog cont
 
 ```tsx
 function createSearchIndex(allBlogs) {
-  if (
-    SITE_METADATA?.search?.provider === 'kbar' &&
-    SITE_METADATA.search.kbarConfig.searchDocumentsPath
-  ) {
-    writeFileSync(
-      `public/${SITE_METADATA.search.kbarConfig.searchDocumentsPath}`,
-      JSON.stringify(sortPosts(allBlogs))
-    )
-    console.log('Local search index generated...')
-  }
+	if (
+		SITE_METADATA?.search?.provider === 'kbar' &&
+		SITE_METADATA.search.kbarConfig.searchDocumentsPath
+	) {
+		writeFileSync(
+			`public/${SITE_METADATA.search.kbarConfig.searchDocumentsPath}`,
+			JSON.stringify(sortPosts(allBlogs))
+		)
+		console.log('Local search index generated...')
+	}
 }
 ```
 

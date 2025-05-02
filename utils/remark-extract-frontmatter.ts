@@ -7,10 +7,10 @@ import yaml from 'js-yaml'
  *
  */
 export function remarkExtractFrontmatter() {
-  return (tree: Parent, file) => {
-    visit(tree, 'yaml', (node: Parent) => {
-      //@ts-ignore
-      file.data.frontmatter = yaml.load(node.value)
-    })
-  }
+	return (tree: Parent, file) => {
+		visit(tree, 'yaml', (node: Parent) => {
+			//@ts-ignore
+			file.data.frontmatter = yaml.load(node.value)
+		})
+	}
 }

@@ -11,11 +11,11 @@ let isProduction = process.env.NODE_ENV === 'production'
  * @return {*}  {Omit<Obj, Keys>}
  */
 function omit<Obj, Keys extends keyof Obj>(obj: Obj, keys: Keys[]): Omit<Obj, Keys> {
-  const result = Object.assign({}, obj)
-  keys.forEach((key) => {
-    delete result[key]
-  })
-  return result
+	const result = Object.assign({}, obj)
+	keys.forEach((key) => {
+		delete result[key]
+	})
+	return result
 }
 
 /**
@@ -25,7 +25,7 @@ function omit<Obj, Keys extends keyof Obj>(obj: Obj, keys: Keys[]): Omit<Obj, Ke
  * @return {*}  {CoreContent<T>}
  */
 export function coreContent<T extends MDXDocument>(content: T): CoreContent<T> {
-  return omit(content, ['body', '_raw', '_id'])
+	return omit(content, ['body', '_raw', '_id'])
 }
 
 /**
@@ -36,7 +36,9 @@ export function coreContent<T extends MDXDocument>(content: T): CoreContent<T> {
  * @return {*}  {CoreContent<T>[]}
  */
 export function allCoreContent<T extends MDXDocument>(contents: T[]): CoreContent<T>[] {
-  if (isProduction)
-    return contents.map((c) => coreContent(c)).filter((c) => !('draft' in c && c.draft === true))
-  return contents.map((c) => coreContent(c))
+	if (isProduction)
+		return contents
+			.map((c) => coreContent(c))
+			.filter((c) => !('draft' in c && c.draft === true))
+	return contents.map((c) => coreContent(c))
 }
