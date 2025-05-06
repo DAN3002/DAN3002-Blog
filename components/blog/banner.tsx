@@ -6,11 +6,12 @@ import { Link } from '~/components/ui/link'
 import { capitalize, kebabCaseToPlainText } from '~/utils/misc'
 
 export function Banner({ banner, className }: { banner: string; className?: string }) {
-	let [path, author, filename] = banner.split('__')
+	// let [path, author, filename] = banner.split('__')
+	const path = banner
 	let handle = path.split('/').pop() || ''
 	return (
 		<div className={clsx('relative', className)}>
-			<Credit
+			{/* <Credit
 				author={author}
 				id={filename.split('.')[0]}
 				className={clsx([
@@ -18,7 +19,7 @@ export function Banner({ banner, className }: { banner: string; className?: stri
 					'hidden rounded-xl px-3 py-0.5 lg:block',
 					'bg-gray-50 text-gray-700 dark:bg-gray-800 dark:text-gray-200',
 				])}
-			/>
+			/> */}
 			<Zoom>
 				<Image
 					src={banner}
