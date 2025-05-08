@@ -54,9 +54,10 @@ export const SITE_METADATA = {
 		],
 	},
 
-	// goodreadsBookshelfUrl: 'https://www.goodreads.com/review/list/...,
-	// goodreadsFeedUrl: 'https://www.goodreads.com/review/list_rss/...',
-	// imdbRatingsList: 'https://www.imdb.com/user/.../ratings/?view=grid',
+	goodreadsBookshelfUrl: '',
+	goodreadsFeedUrl: '',
+	imdbRatingsList: '',
+
 	analytics: {
 		umamiAnalytics: {
 			websiteId: process.env.NEXT_UMAMI_ID,

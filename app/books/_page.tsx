@@ -25,7 +25,7 @@ export default async function BooksPage() {
 							exploring topics such as science, technology, nonfiction, business,
 							education, productivity, and history.
 							<br />
-							This is where I keep track of what I’ve read and what’s on my reading
+							This is where I keep track of what I've read and what's on my reading
 							list.
 						</p>
 						<p className="mt-3 italic">
@@ -46,11 +46,9 @@ export default async function BooksPage() {
 			/>
 			<Suspense>
 				<BooksList
-					books={
-						books.sort(
-							(a, b) => Number(b.user_rating) - Number(a.user_rating)
-						) as unknown as GoodreadsBook[]
-					}
+					books={(books as GoodreadsBook[]).sort(
+						(a, b) => Number(b.user_rating) - Number(a.user_rating)
+					)}
 				/>
 			</Suspense>
 			<div className="mt-6 border-t border-gray-200 py-5 dark:border-gray-700 md:mt-10 md:py-10">
