@@ -13,9 +13,11 @@
 		"db:init": "npx drizzle-kit generate && npx drizzle-kit push",
 		"db:studio": "npx drizzle-kit studio --port 8088",
 		"seed": "tsx ./scripts/seed.ts",
-		"typecheck": "npx tsc -b"
+		"typecheck": "npx tsc -b",
+		"deploy": "npx @cloudflare/next-on-pages"
 	},
 	"dependencies": {
+		"@cloudflare/next-on-pages": "^1.13.12",
 		"@giscus/react": "^3.0.0",
 		"@headlessui/react": "2.2.0",
 		"@next/bundle-analyzer": "15.1.2",
