@@ -54,9 +54,9 @@ export const SITE_METADATA = {
 		],
 	},
 
-	// goodreadsBookshelfUrl: 'https://www.goodreads.com/review/list/179720035-leo-huynh',
-	// goodreadsFeedUrl: 'https://www.goodreads.com/review/list_rss/179720035',
-	// imdbRatingsList: 'https://www.imdb.com/user/ur154483197/ratings/?view=grid',
+	// goodreadsBookshelfUrl: 'https://www.goodreads.com/review/list/...,
+	// goodreadsFeedUrl: 'https://www.goodreads.com/review/list_rss/...',
+	// imdbRatingsList: 'https://www.imdb.com/user/.../ratings/?view=grid',
 	analytics: {
 		umamiAnalytics: {
 			websiteId: process.env.NEXT_UMAMI_ID,

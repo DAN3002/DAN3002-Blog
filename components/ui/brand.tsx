@@ -44,6 +44,7 @@ import Env from '~/icons/env.svg'
 import Html from '~/icons/html5.svg'
 import Postcss from '~/icons/postcss.svg'
 import Commitlint from '~/icons/commitlint.svg'
+import { SITE_METADATA } from '~/data/site-metadata'
 
 export let BrandsMap: Record<
 	string,
@@ -265,7 +266,7 @@ export function Brand(props: {
 	}
 
 	return (
-		<Link href={`${url}?ref=leohuynh.dev`} className={className}>
+		<Link href={`${url}?ref=${SITE_METADATA.siteUrl}`} className={className}>
 			<Icon className={iconClassName} fill="currentColor" />
 		</Link>
 	)
