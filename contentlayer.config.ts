@@ -171,7 +171,9 @@ export let Author = defineDocumentType(() => ({
 		twitter: { type: 'string' },
 		linkedin: { type: 'string' },
 		github: { type: 'string' },
-		layout: { type: 'string' },
+		website: { type: 'string' },
+		blog: { type: 'string' },
+		location: { type: 'string' },
 	},
 	computedFields,
 }))
