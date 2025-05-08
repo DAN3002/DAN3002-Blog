@@ -1,53 +1,66 @@
-<h1 align="center">leohuynh.dev 🧑‍💻</h1>
+# blog.dan3002.tech 🧑‍💻
 
 <div align="center">
 
 [![Made in Vietnam](https://raw.githubusercontent.com/webuild-community/badge/master/svg/made-modern.svg)](https://leohuynh.dev)
+[![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
 </div>
 
-![leohuynh.dev @ #250a4c5 on Oct.13](https://cdn.shopify.com/s/files/1/0669/0262/2504/files/pawelzmarlak-2024-10-12T14_51_02.315Z.png?v=1728744886)
+## 📝 About
 
-## Motivation
+Welcome to my personal blog where I share my journey as a software engineer. This space is dedicated to documenting my experiences, insights, and discoveries in the world of technology. Through this blog, I aim to share valuable knowledge and connect with fellow developers who share similar interests in web development, software engineering, and technology innovation.
 
-> Sharing is learning!
+## 🎯 Motivation
 
-I started this blog as a way to document and share stuff I have learned and found useful as a software engineer.
+> "Sharing is learning!"
 
-Building and writing things down is a great way for me to solidify my understanding of new concepts and ideas. I hope my blog could be a helpful resource for fellow devs who interested in web dev, eCommerce, and related technologies.
+I started this blog as a way to document and share my journey as a software engineer. Writing about my experiences and learnings helps me:
 
-I would be highly appreciated if you could leave your comments and thoughts on what I have written 🍻
+- Solidify my understanding of new concepts
+- Share knowledge with the developer community
+- Create a personal knowledge base
+- Connect with fellow developers
 
-## Tech stack
+## 🛠️ Tech Stack
 
-This blog is hosted on [Vercel](https://vercel.com/), built with [Next.js](https://nextjs.org/) and [Tailwind CSS](https://tailwindcss.com/) using **Tailwind Nextjs Starter Blog**.
+This blog is built with modern web technologies:
 
-A huge thanks to [Timothy Lin](https://twitter.com/timlrxx) for the minimal, lightweight, and super easy-to-customize blog starter.
+- **Framework**: [Next.js](https://nextjs.org/) 14+ (App Router)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Hosting**: [Vercel](https://vercel.com/)
+- **Analytics**: Umami website analytics
+- **Theme**: Dark mode with GitHub dark dimmed colors
 
-A few major over-engineering-changes from the original repo:
+### Key Features
 
-- ⚛️ **React 18+**, **NextJS 14+** (App Router)
-- 🎉 Adopting **Typescript**, committing with [Conventional Commits](https://www.conventionalcommits.org/)
-- 📊 Monitoring site with [Umami](https://umami.is/) website analytics
-- 👀 Theming in dark mode with [Github dark dimmed](https://github.blog/changelog/2021-04-14-dark-and-dimmed-themes-are-now-generally-available/) colors for better contrast
-- 👨‍💻 Making a lot of changes to the UI, new homepage design, adding `ProfileCard`, `CareerTimeline` components, adding `/snippets`, `/books` page, etc.
+- ⚛️ React 18+ with Next.js 14+ (App Router)
+- 🎉 TypeScript support with strict type checking
+- 📊 Built-in analytics with Umami
+- 👀 Dark mode with optimized contrast
+- 📱 Fully responsive design
+- 🚀 Optimized performance
+- 📝 MDX support for rich content
 
-## Assets
+## 🙏 Acknowledgments
 
-The images in this blog are from [Unsplash](https://unsplash.com/), gifs from [GIPHY](https://giphy.com/), and illustrations are from [Storyset](https://storyset.com/).
+Special thanks to:
 
-Thanks for the free resources 🙏
+- [Leo Huynh](https://github.com/hta218) for the original project that inspired this blog
+- [Timothy Lin](https://twitter.com/timlrxx) for the Tailwind Nextjs Starter Blog template
+- The open-source community for their continuous support
 
-## Star History
+## 📄 License
 
-<a href="https://star-history.com/#hta218/leohuynh.dev&Date">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=hta218/leohuynh.dev&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=hta218/leohuynh.dev&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=hta218/leohuynh.dev&type=Date" />
- </picture>
-</a>
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
-Copyright (c) 2024 - Leo's dev blog – stories, insights, and ideas.
+<div align="center">
+
+Made with ❤️ by [Dan3002](https://github.com/dan3002)
+
+</div>
