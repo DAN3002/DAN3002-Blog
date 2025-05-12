@@ -13,7 +13,9 @@ const snippets = allSnippets as unknown as Snippet[]
 const RSS_PAGE = 'feed.xml'
 
 function generateRssItem(item: Blog | Snippet) {
-	let { siteUrl, email, author } = SITE_METADATA
+	let { siteUrl, email, author, socialBanner } = SITE_METADATA
+	const imageUrl = item.images?.[0] || socialBanner
+	const fullImageUrl = imageUrl.startsWith('http') ? imageUrl : `${siteUrl}${imageUrl}`
 	return `
 		<item>
 			<guid>${siteUrl}/blog/${item.slug}</guid>
@@ -23,6 +25,7 @@ function generateRssItem(item: Blog | Snippet) {
 			<pubDate>${new Date(item.date).toUTCString()}</pubDate>
 			<author>${email} (${author})</author>
 			${item.tags && item.tags.map((t) => `<category>${t}</category>`).join('')}
+			<thumbnail>${fullImageUrl}</thumbnail>
 		</item>
 	`
 }
