@@ -25,7 +25,7 @@ function generateRssItem(item: Blog | Snippet) {
 			<pubDate>${new Date(item.date).toUTCString()}</pubDate>
 			<author>${email} (${author})</author>
 			${item.tags && item.tags.map((t) => `<category>${t}</category>`).join('')}
-			<thumbnail>${fullImageUrl}</thumbnail>
+			<enclosure url="${fullImageUrl}" length="0" type="image/jpeg" />
 		</item>
 	`
 }
